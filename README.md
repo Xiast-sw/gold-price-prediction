@@ -1,4 +1,4 @@
-# Gold Prediction
+# Gold Predict
 
 ## Project Description
 
