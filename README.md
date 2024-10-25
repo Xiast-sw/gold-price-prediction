@@ -19,5 +19,11 @@ To run this project, you need the following libraries:
 - Matplotlib
 - TensorFlow (or Keras)
 
+## Contributing
+Adil Buğra AYTAR
+
 ## License
 This project is licensed under the MIT License.
+
+## Contact
+If you have any questions, please reach out via a.bugraaytar@gmail.com
