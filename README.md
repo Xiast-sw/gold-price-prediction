@@ -1,8 +1,8 @@
-# Gold Predict
+# Gold Price Prediction
 
 ## Project Description
 
-GoldPredict is a machine learning project developed to predict gold prices based on historical data. This project aims to forecast future gold prices using Long Short-Term Memory (LSTM) neural networks.
+Gold Price Prediction is a machine learning project developed to predict gold prices based on historical data. This project aims to forecast future gold prices using Long Short-Term Memory (LSTM) neural networks.
 
 ## Features
 
