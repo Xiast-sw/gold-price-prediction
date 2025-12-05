@@ -1,26 +1,38 @@
-# Gold Price Prediction
+# 🪙 Gold Price Prediction with LSTM
 
-## Project Description
-Gold Price Prediction is a machine learning project developed to predict gold prices based on historical data. This project aims to forecast future gold prices using Long Short-Term Memory (LSTM) neural networks.
+A deep learning project that predicts future gold prices using Long Short-Term Memory (LSTM) neural networks.
 
-## Features
-- **Historical Data:** Makes predictions using monthly gold prices from 2020 onwards.
-- **LSTM Model:** Utilizes deep learning techniques to predict the future trend of gold prices.
-- **Visualization:** Provides visual comparisons between predicted results and actual prices.
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Requirements
-To run this project, you need the following libraries:
-- Python 3.x
-- NumPy
-- Pandas
-- Matplotlib
-- TensorFlow (or Keras)
+---
 
-## Contributing
-Adil Buğra AYTAR
- 
-## License
-This project is licensed under the MIT License.
- 
-## Contact
-If you have any questions, please reach out via a.bugraaytar@gmail.com
+## 📊 Results
+
+![Gold Price Prediction](results/prediction.png)
+
+### Model Performance
+
+| Metric | Value |
+|--------|-------|
+| Model | 2-Layer LSTM (150-150 neurons) |
+| Final Training Loss (MSE) | 0.0022 |
+| Time Step | 12 months |
+| Forecast Period | 6 months |
+| Training Epochs | 15 (Early Stopping) |
+
+### 🔮 6-Month Price Forecast (TL)
+
+| Month | Predicted Price |
+|-------|-----------------|
+| November 2024 | 2,946.88 TL |
+| December 2024 | 3,063.03 TL |
+| January 2025 | 3,176.24 TL |
+| February 2025 | 3,286.90 TL |
+| March 2025 | 3,398.92 TL |
+| April 2025 | 3,502.94 TL |
+
+---
+
+## 🏗️ Project Structure
