@@ -37,21 +37,20 @@ A deep learning project that predicts future gold prices using Long Short-Term M
 
 ## 🏗️ Project Structure
 
-gold-price-prediction/
-├── data/
-│ └── goldprice.csv # Historical gold prices (2020-2024)
-├── notebooks/
-│ └── GoldPredict.ipynb # Jupyter notebook for analysis
-├── src/
-│ ├── model.py # LSTM model architecture
-│ ├── preprocessing.py # Data loading & preprocessing
-│ └── train.py # Main training script
-├── results/
-│ └── prediction.png # Prediction visualization
-├── .gitignore
-├── requirements.txt
-└── README.md
-
+    gold-price-prediction/
+    ├── data/
+    │   └── goldprice.csv
+    ├── notebooks/
+    │   └── GoldPredict.ipynb
+    ├── src/
+    │   ├── model.py
+    │   ├── preprocessing.py
+    │   └── train.py
+    ├── results/
+    │   └── prediction.png
+    ├── .gitignore
+    ├── requirements.txt
+    └── README.md
 
 ---
 
@@ -69,28 +68,107 @@ gold-price-prediction/
 ---
 
 ## 🧠 Model Architecture
-Input (12 months)
-↓
-┌─────────────────────────┐
-│ LSTM Layer 1 │
-│ 150 units │
-│ return_sequences=True │
-└─────────────────────────┘
-↓
-┌─────────────────────────┐
-│ Dropout (30%) │
-└─────────────────────────┘
-↓
-┌─────────────────────────┐
-│ LSTM Layer 2 │
-│ 150 units │
-└─────────────────────────┘
-↓
-┌─────────────────────────┐
-│ Dropout (30%) │
-└─────────────────────────┘
-↓
-┌─────────────────────────┐
-│ Dense Layer (1) │
-│ Output: Next Price │
-└─────────────────────────┘
+
+    Input (12 months)
+           ↓
+    ┌─────────────────────────┐
+    │ LSTM Layer 1            │
+    │ 150 units               │
+    │ return_sequences=True   │
+    └─────────────────────────┘
+           ↓
+    ┌─────────────────────────┐
+    │ Dropout (30%)           │
+    └─────────────────────────┘
+           ↓
+    ┌─────────────────────────┐
+    │ LSTM Layer 2            │
+    │ 150 units               │
+    └─────────────────────────┘
+           ↓
+    ┌─────────────────────────┐
+    │ Dropout (30%)           │
+    └─────────────────────────┘
+           ↓
+    ┌─────────────────────────┐
+    │ Dense Layer (1)         │
+    │ Output: Next Price      │
+    └─────────────────────────┘
+
+### Training Configuration
+
+| Parameter | Value |
+|-----------|-------|
+| Optimizer | Adam |
+| Loss Function | Mean Squared Error (MSE) |
+| Max Epochs | 100 |
+| Early Stopping | Patience: 5 |
+| Batch Size | 32 |
+| Train/Test Split | 80% / 20% |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+    git clone https://github.com/Xiast-sw/gold-price-prediction.git
+    cd gold-price-prediction
+
+### 2. Install Dependencies
+
+    pip install -r requirements.txt
+
+### 3. Run Training
+
+    python -m src.train
+
+### 4. Or Use Jupyter Notebook
+
+    jupyter notebook notebooks/GoldPredict.ipynb
+
+---
+
+## 🛠️ Technologies Used
+
+| Category | Technologies |
+|----------|--------------|
+| **Language** | Python 3.x |
+| **Deep Learning** | TensorFlow, Keras |
+| **Data Processing** | Pandas, NumPy |
+| **Visualization** | Matplotlib |
+| **ML Tools** | Scikit-learn |
+
+---
+
+## 📁 File Descriptions
+
+| File | Description |
+|------|-------------|
+| src/model.py | LSTM model architecture definition |
+| src/preprocessing.py | Data loading, scaling, and dataset creation |
+| src/train.py | Main script to train model and generate predictions |
+| notebooks/GoldPredict.ipynb | Interactive analysis and experimentation |
+| data/goldprice.csv | Historical gold price data |
+
+---
+
+## 👤 Author
+
+**Adil Buğra Aytar**
+
+- GitHub: https://github.com/Xiast-sw
+- LinkedIn: https://linkedin.com/in/adil-bugra-aytar-47a555224
+- Email: a.bugraaytar@gmail.com
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving it a star!
