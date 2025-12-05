@@ -157,7 +157,7 @@ A deep learning project that predicts future gold prices using Long Short-Term M
 
 **Adil Buğra Aytar**
 
-- GitHub: https://github.com/Xiast-sw
+- GitHub: [![GitHub](https://img.shields.io/badge/GitHub-Xiast--sw-black?logo=github)](https://github.com/Xiast-sw)
 - LinkedIn: https://linkedin.com/in/adil-bugra-aytar-47a555224
 - Email: a.bugraaytar@gmail.com
 
