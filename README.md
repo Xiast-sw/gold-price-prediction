@@ -1,4 +1,4 @@
-# 🪙 Gold Price Prediction with LSTM
+# Gold Price Prediction with LSTM
 
 A deep learning project that predicts future gold prices using Long Short-Term Memory (LSTM) neural networks.
 
