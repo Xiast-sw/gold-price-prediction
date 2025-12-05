@@ -36,3 +36,61 @@ A deep learning project that predicts future gold prices using Long Short-Term M
 ---
 
 ## 🏗️ Project Structure
+
+gold-price-prediction/
+├── data/
+│ └── goldprice.csv # Historical gold prices (2020-2024)
+├── notebooks/
+│ └── GoldPredict.ipynb # Jupyter notebook for analysis
+├── src/
+│ ├── model.py # LSTM model architecture
+│ ├── preprocessing.py # Data loading & preprocessing
+│ └── train.py # Main training script
+├── results/
+│ └── prediction.png # Prediction visualization
+├── .gitignore
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 📈 Dataset
+
+| Info | Details |
+|------|---------|
+| **Source** | Manually collected |
+| **Period** | January 2020 - October 2024 |
+| **Records** | 58 monthly data points |
+| **Feature** | Monthly average gold prices (TL) |
+| **Start Price** | 297.01 TL |
+| **End Price** | 3,081.60 TL |
+
+---
+
+## 🧠 Model Architecture
+Input (12 months)
+↓
+┌─────────────────────────┐
+│ LSTM Layer 1 │
+│ 150 units │
+│ return_sequences=True │
+└─────────────────────────┘
+↓
+┌─────────────────────────┐
+│ Dropout (30%) │
+└─────────────────────────┘
+↓
+┌─────────────────────────┐
+│ LSTM Layer 2 │
+│ 150 units │
+└─────────────────────────┘
+↓
+┌─────────────────────────┐
+│ Dropout (30%) │
+└─────────────────────────┘
+↓
+┌─────────────────────────┐
+│ Dense Layer (1) │
+│ Output: Next Price │
+└─────────────────────────┘
